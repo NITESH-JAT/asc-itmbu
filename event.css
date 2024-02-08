@@ -160,7 +160,7 @@ body {
     border-bottom: 2px dashed #f3f3f3;
     margin: auto 5px;
     position: absolute;
-    top: 7.4em;
+    top: 7.9em;
     right: 10px;
     bottom: 0;
 }
@@ -177,7 +177,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 6.1em;
+    top: 6.5em;
     left: 30px;
 }
 
@@ -193,7 +193,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 5.9em;
+    top: 6.4em;
     right: 30px;
 }
 
@@ -260,6 +260,8 @@ body {
 }
 
 .main-timeline .description {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
     color: #dfdede;
     margin-bottom: 0;
 }
