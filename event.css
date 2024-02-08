@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karantina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:ital@0;1&family=Karantina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap');
+
+
+body {
+    margin: 0;
+    background-image: linear-gradient(180deg, #040028 0%, rgba(22, 16, 90, 0.95) 69.51%, rgba(23, 20, 57, 0.93) 100%);
+    overflow-x: hidden;
+}
+
+.navbar {
+    padding: 1rem 5rem 0 5rem;
+    position: relative;
+}
+
+.navbar li {
+    color: aliceblue;
+    padding: 0 1rem 0 1rem;
+    margin: 1rem;
+}
+
+.nav-item a {
+    font-size: 1em;
+    color: aliceblue;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.nav-item a.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.heading h1 {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 7px 40px 20px rgba(20, 20, 20, 0.5);
+    font-family: "Karantina", system-ui;
+    font-size: 348.758px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 30.826px;
+    padding: 88px;
+}
+
+.shape {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 92%;
+    height: 30em;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(126, 187, 237, 0.517) 0%, rgba(192, 196, 197, 0.5) 100%);
+    z-index: -1;
+    filter: blur(100px);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-filter: blur(100px);
+}
+
+
+/*timeline*/
+.main-timeline {
+    margin-top: 2.8em;
+    margin-bottom: 5em;
+    position: relative
+}
+
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #ffffff;;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.main-timeline .timeline {
+    margin-bottom: 40px;
+    position: relative
+}
+
+.main-timeline .timeline:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.main-timeline .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.main-timeline .icon:before {
+    background: #fff;
+    border: 2px solid #000000;
+    left: 0px
+}
+
+
+.main-timeline .date-content {
+    width: 50%;
+    float: left;
+    margin-top: 22px;
+    position: relative;
+}
+
+.main-timeline .date-content:before {
+    content: "";
+    width: 22%;
+    height: 2px;
+    border-bottom: 2px dashed #f3f3f3;
+    margin: auto 5px;
+    position: absolute;
+    top: 7.4em;
+    right: 10px;
+    bottom: 0;
+}
+
+.main-timeline .date-outer-left {
+    color: #f3f3f3;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    font-family: Josefin sans-serif;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 6.1em;
+    left: 30px;
+}
+
+.main-timeline .date-outer-right {
+    color: #f3f3f3;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    font-family: Josefin sans-serif;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5.9em;
+    right: 30px;
+}
+
+
+.main-timeline .date-outer-left a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.main-timeline .date-outer-right a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.main-timeline .date-outer-left a i,
+.main-timeline .date-outer-right a i{
+    font-size: 2em;
+    color: #f3f3f3;
+}
+
+.main-timeline .month-year {
+    font-size: 28px;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-timeline .timeline-content-right {
+    width: 40%;
+    margin-right: 2em;
+    padding-right: 5px;
+    float: right
+}
+
+.main-timeline .timeline-content-left {
+    width: 40%;
+    margin-left: 2em;
+    padding-left: 5px;
+    float: left
+}
+
+.card {
+    background-image: linear-gradient(to bottom,rgb(175, 158, 222), rgb(3, 10, 71));
+    border-radius: 28px;
+    padding: 20px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+}
+
+.card-content {
+    padding: 2px;
+}
+
+.main-timeline .title {
+    color: #ffff;
+    font-size: 30px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bolder;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+
+.main-timeline .description {
+    color: #dfdede;
+    margin-bottom: 0;
+}
+
+.registration-button {
+    font-family:Josefin sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 65%;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.card-content .title{
+    width: 80%;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    border-bottom: 4px solid #ffffff;
+}
+
+.registration-button img{
+    width: 25%;
+    margin-left: 13px;
+}
+
+.registration-button a{
+    text-decoration:none;
+}
+
+.registration-button:hover {
+    background-color: #f88a15;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+
+.main-timeline .timeline:nth-child(2n) .date-content {
+    float: right
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+    left: 10px
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: right
+}
+
+
+
+/*footer */
+.footer {
+    background-color: #F08724;
+    color: #ffffff;
+    width: 100.5%;
+    height: 40vh;
+    position: relative;
+    bottom: -10px;
+    padding: 60px 0 12em 0;
+    list-style: none;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    margin: -1em 0px 10px -10em;
+    width: 150px;
+    height: auto;
+}
+
+.footer-links {
+    text-align: left;
+    margin-top: 2em;
+    margin-left: -5em;
+}
+
+.footer-links h5 {
+    font-family: "Josefin Sans", sans-serif;
+    color: #393939;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-links a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.footer-links a h5:hover{
+    color: #ffff;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.info{
+    margin-top: 1em;
+    font-size: 20px;
+    color: #cecdcd;
+}
+
+.info i{
+    margin-left: -40px;
+}
+
+.info span{
+    padding: 10px;
+}
+.info .fa-envelope,
+.info .mail{
+    display: inline;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 5em;
+}
+
+.footer-social h5 {
+    font-family: "Josefin Sans", sans-serif;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social ul li {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social ul li a {
+    font-size: 30px;
+    color: #1D1855;
+}
+
+.footer-social ul li i:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
